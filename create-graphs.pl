@@ -7,7 +7,7 @@ use 5.010;
 # Terms to search organized by categories...
 my %terms = (
     "Scripting languages"   => [ qw(python perl ruby shell bash) ],
-    "Programming languages" => [ ('java', 'javascript', '"c++"', 'golang', 'go') ],
+    "Programming languages" => [ qw(java javascript golang php) ],
     "Operating systems"     => [ qw(linux windows freebsd solaris) ],
     "Certifications"        => [ qw(ccna cissp lpic) ],
     "Linux scripting"       => [ ('linux perl', 'linux python', 'linux ruby', 'linux bash', 'linux shell') ],
@@ -27,6 +27,16 @@ sub run {
     system($cmd);
     print " done\n";
 }
+
+print "--> Search terms and store results\n";
+my @all_terms;
+for my $category (keys %terms) {
+    push @all_terms, @{ $terms{$category} };
+}
+my $all_terms = join " ", map { "'$_'" } @all_terms;
+my $cmd = "tech-terms search $all_terms --store";
+#say($cmd);
+run($cmd);
 
 print "--> Generate graphs\n";
 for my $category ( keys %terms ) {
