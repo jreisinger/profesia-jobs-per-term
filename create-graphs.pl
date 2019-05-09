@@ -37,7 +37,7 @@ for my $category ( keys %terms ) {
 }
 
 print "--> Generate README content\n";
-for my $category ( keys %terms ) {
+for my $category ( sort keys %terms ) {
     my $urlencoded = $category;
     $urlencoded =~ s/\s+/%20/g; 
     say "![$category](https://raw.githubusercontent.com/jreisinger/profesia-jobs-per-term/master/graphs/$urlencoded.png)";
