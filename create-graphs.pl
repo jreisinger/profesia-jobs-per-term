@@ -28,15 +28,17 @@ sub run {
     print " done\n";
 }
 
-#print "--> Generate graphs\n";
-#for my $category ( keys %terms ) {
-#    my $terms = join " ", map { "'$_'" } @{ $terms{$category} };
-#    my $cmd = "tech-terms plot --title '$category' $terms";
-#    #say($cmd);
-#    run($cmd);
-#}
+print "--> Generate graphs\n";
+for my $category ( keys %terms ) {
+    my $terms = join " ", map { "'$_'" } @{ $terms{$category} };
+    my $cmd = "tech-terms plot --title '$category' $terms";
+    #say($cmd);
+    run($cmd);
+}
 
 print "--> Generate README content\n";
 for my $category ( keys %terms ) {
-    say "![$category](https://raw.githubusercontent.com/jreisinger/profesia-jobs-per-term/master/graphs/$category.png)";
+    my $urlencoded = $category;
+    $urlencoded =~ s/\s+/%20/g; 
+    say "![$category](https://raw.githubusercontent.com/jreisinger/profesia-jobs-per-term/master/graphs/$urlencoded.png)";
 }
