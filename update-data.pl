@@ -21,6 +21,9 @@ my %terms = (
     "Other"                 => [ qw(bind haproxy memcache jenkins gitlab) ],
 );
 
+# Repo path...
+chdir "$ENV{HOME}/github-repos/profesia-jobs-per-term";
+
 sub run {
     my $cmd = shift;
     print "running '$cmd' ...";
@@ -52,3 +55,6 @@ for my $category ( sort keys %terms ) {
     $urlencoded =~ s/\s+/%20/g; 
     say "![$category](https://raw.githubusercontent.com/jreisinger/profesia-jobs-per-term/master/graphs/$urlencoded.png)";
 }
+
+print "--> Commit and push\n";
+system "git commit -am 'updated data' && git push";
