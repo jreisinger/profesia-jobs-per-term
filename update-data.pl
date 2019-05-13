@@ -24,6 +24,9 @@ my %terms = (
 # Repo path...
 chdir "$ENV{HOME}/github-repos/profesia-jobs-per-term";
 
+# Binary...
+my $TECH_TERMS = '/home/reisinge/bin/tech-terms';
+
 sub run {
     my $cmd = shift;
     print "running '$cmd' ...";
@@ -37,14 +40,14 @@ for my $category (keys %terms) {
     push @all_terms, @{ $terms{$category} };
 }
 my $all_terms = join " ", map { "'$_'" } @all_terms;
-my $cmd = "tech-terms search $all_terms --store";
+my $cmd = "$TECH_TERMS search $all_terms --store";
 #say($cmd);
 run($cmd);
 
 print "--> Generate graphs\n";
 for my $category ( keys %terms ) {
     my $terms = join " ", map { "'$_'" } @{ $terms{$category} };
-    my $cmd = "tech-terms plot --title '$category' $terms";
+    my $cmd = "$TECH_TERMS plot --title '$category' $terms";
     #say($cmd);
     run($cmd);
 }
