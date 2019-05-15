@@ -1,6 +1,6 @@
 ## Job offers at profesia.sk per technical term
 
-Generated using [tech-terms](https://github.com/jreisinger/tech-terms).
+Generated using [tech-terms](https://github.com/jreisinger/tech-terms). Just modify `%terms` in `update-data.pl` if you want to change the terms to search and graph.
 
 ![Big data](https://raw.githubusercontent.com/jreisinger/profesia-jobs-per-term/master/graphs/Big%20data.png)
 ![Certifications](https://raw.githubusercontent.com/jreisinger/profesia-jobs-per-term/master/graphs/Certifications.png)
