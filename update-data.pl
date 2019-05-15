@@ -16,7 +16,8 @@ my %terms = (
     "Web servers"           => [ qw(apache nginx lighttpd) ],
     "Configuration mngt"    => [ qw(puppet chef salt cfengine ansible) ],
     "DevOps"                => [ qw(devops cloud aws gcp agile scrum sre) ],
-    "Containers"            => [ qw(docker rkt coreos systemd-nspawn lxc kubernetes swarm mesos marathon) ],
+    #"Containers"            => [ qw(docker rkt coreos systemd-nspawn lxc kubernetes swarm mesos marathon) ],
+    "Containers"            => [ qw(docker rkt lxc kubernetes swarm) ],
     "Big data"              => [ qw(splunk graylog elasticsearch elk) ],
     "Other"                 => [ qw(bind haproxy memcache jenkins gitlab) ],
 );
