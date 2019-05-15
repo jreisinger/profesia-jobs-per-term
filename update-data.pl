@@ -4,7 +4,7 @@ use warnings;
 use autodie;
 use 5.010;
 
-# Terms to search organized by categories...
+# Terms to search and graph organized by categories...
 my %terms = (
     "Scripting languages"   => [ qw(python perl ruby shell bash) ],
     "Programming languages" => [ qw(java javascript golang php) ],
