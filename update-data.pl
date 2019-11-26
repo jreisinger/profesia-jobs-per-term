@@ -25,6 +25,9 @@ my %terms = (
 # Repo path...
 chdir "$ENV{HOME}/github-repos/profesia-jobs-per-term";
 
+print "--> Pull\n";
+system "git pull";
+
 # Binary...
 my $TECH_TERMS = '/home/reisinge/bin/tech-terms';
 
