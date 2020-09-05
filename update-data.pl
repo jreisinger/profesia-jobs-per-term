@@ -29,7 +29,7 @@ print "--> Pull\n";
 system "git pull";
 
 # Binary...
-my $TECH_TERMS = '/home/reisinge/go/bin/tech-terms';
+my $TECH_TERMS = "$ENV{HOME}/go/bin/tech-terms";
 
 sub run {
     my $cmd = shift;
