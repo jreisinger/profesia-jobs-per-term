@@ -20,8 +20,8 @@ my %terms = (
     "Containers"            => [ qw(docker rkt lxc kubernetes swarm) ],
     "Big data"              => [ qw(splunk graylog elasticsearch elk) ],
     "Other"                 => [ qw(bind haproxy memcache jenkins gitlab) ],
-    "Tech stack"            => [ qw('linux golang', 'kubernetes golang', 'linux kubernetes golang') ],
-    "Tech stack + domain"   => [ qw('linux golang security', 'kubernetes golang security', 'linux kubernetes golang security') ],
+    "Tech stack"            => [ ('linux golang', 'kubernetes golang', 'linux kubernetes golang') ],
+    "Tech stack + domain"   => [ ('linux golang security', 'kubernetes golang security', 'linux kubernetes golang security') ],
 );
 
 # Repo path...
