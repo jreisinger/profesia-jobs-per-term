@@ -7,7 +7,7 @@ use 5.010;
 # Terms to search and graph organized by categories...
 my %terms = (
     "Scripting languages"   => [ qw(python perl ruby shell bash) ],
-    "Programming languages" => [ qw(java javascript golang php c++) ],
+    "Programming languages" => [ qw(java javascript golang php) ],
     "Operating systems"     => [ qw(linux windows freebsd solaris) ],
     "Certifications"        => [ qw(ccna cissp lpic ckad cka) ],
     "Linux scripting"       => [ ('linux perl', 'linux python', 'linux ruby', 'linux bash', 'linux shell') ],
@@ -21,7 +21,7 @@ my %terms = (
     "Big data"              => [ qw(splunk graylog elasticsearch elk) ],
     "Other"                 => [ qw(bind haproxy memcache jenkins gitlab) ],
     "Tech stack"            => [ ('linux golang', 'kubernetes golang', 'linux kubernetes golang') ],
-    "Tech stack + domain"   => [ ('linux golang security', 'kubernetes golang security', 'linux kubernetes golang security') ],
+    "Tech stack and domain" => [ ('linux golang security', 'kubernetes golang security', 'linux kubernetes golang security') ],
 );
 
 # Repo path...

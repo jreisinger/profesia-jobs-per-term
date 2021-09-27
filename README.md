@@ -19,3 +19,5 @@ Generated using [tech-terms](https://github.com/jreisinger/tech-terms). Just mod
 ![Programming languages](https://raw.githubusercontent.com/jreisinger/profesia-jobs-per-term/master/graphs/Programming%20languages.png)
 ![Scripting languages](https://raw.githubusercontent.com/jreisinger/profesia-jobs-per-term/master/graphs/Scripting%20languages.png)
 ![Web servers](https://raw.githubusercontent.com/jreisinger/profesia-jobs-per-term/master/graphs/Web%20servers.png)
+![Tech stack](https://raw.githubusercontent.com/jreisinger/profesia-jobs-per-term/master/graphs/Tech%20stack.png)
+![Tech stack](https://raw.githubusercontent.com/jreisinger/profesia-jobs-per-term/master/graphs/Tech%20stack%20and%20domain.png)
