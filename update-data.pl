@@ -7,19 +7,21 @@ use 5.010;
 # Terms to search and graph organized by categories...
 my %terms = (
     "Scripting languages"   => [ qw(python perl ruby shell bash) ],
-    "Programming languages" => [ qw(java javascript golang php) ],
+    "Programming languages" => [ qw(java javascript golang php c++) ],
     "Operating systems"     => [ qw(linux windows freebsd solaris) ],
-    "Certifications"        => [ qw(ccna cissp lpic ckad) ],
+    "Certifications"        => [ qw(ccna cissp lpic ckad cka) ],
     "Linux scripting"       => [ ('linux perl', 'linux python', 'linux ruby', 'linux bash', 'linux shell') ],
     "Monitoring"            => [ qw(zabbix nagios icinga prometheus grafana) ],
     "Databases"             => [ qw(mysql postgresql oracle couchdb redis mongodb) ],
-    "Web servers"           => [ qw(apache nginx lighttpd) ],
+    "Web servers"           => [ qw(apache nginx lighttpd caddy) ],
     "Configuration mngt"    => [ qw(puppet chef salt cfengine ansible) ],
     "DevOps"                => [ qw(devops cloud aws gcp agile scrum sre) ],
     #"Containers"            => [ qw(docker rkt coreos systemd-nspawn lxc kubernetes swarm mesos marathon) ],
     "Containers"            => [ qw(docker rkt lxc kubernetes swarm) ],
     "Big data"              => [ qw(splunk graylog elasticsearch elk) ],
     "Other"                 => [ qw(bind haproxy memcache jenkins gitlab) ],
+    "Tech stack"            => [ qw('linux golang', 'kubernetes golang', 'linux kubernetes golang') ],
+    "Tech stack + domain"   => [ qw('linux golang security', 'kubernetes golang security', 'linux kubernetes golang security') ],
 );
 
 # Repo path...
