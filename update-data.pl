@@ -25,7 +25,7 @@ my %terms = (
 );
 
 # Repo path...
-chdir "$ENV{HOME}/git/hub/profesia-jobs-per-term";
+chdir "$ENV{HOME}/github.com/jreisinger/profesia-jobs-per-term";
 
 print "--> Pull\n";
 system "git pull";
